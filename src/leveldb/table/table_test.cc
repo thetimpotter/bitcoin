@@ -809,7 +809,7 @@ TEST(TableTest, ApproximateOffsetOfPlain) {
   std::vector<std::string> keys;
   KVMap kvmap;
   Options options;
-  options.block_size = 1024;
+  options.block_size = 16384;
   options.compression = kNoCompression;
   c.Finish(options, &keys, &kvmap);
 
